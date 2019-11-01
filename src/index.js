@@ -6,7 +6,7 @@ import vuetify from 'plugins/vuetify';
 
 import '~/assets/styles/index.scss';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   el: '#app',
@@ -14,5 +14,5 @@ new Vue({
   store,
   vuetify,
   components: { App },
-  template: '<App />'
-})
+  template: '<App />',
+});

@@ -19,8 +19,8 @@ const router = new Router({
   ],
 });
 
-router.afterEach((to) => {
+router.afterEach(to => {
   document.title = to.meta.title;
 });
 
-export default router
+export default router;

@@ -27,11 +27,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
       },
       {
         test: /\.s(c|a)ss$/,
@@ -44,11 +44,11 @@ module.exports = {
               implementation: require('sass'),
               sassOptions: {
                 fiber: require('fibers'),
-                indentedSyntax: true // optional
+                indentedSyntax: true, // optional
               },
             },
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.css$/i,
@@ -66,8 +66,8 @@ module.exports = {
       '~': path.resolve(__dirname, 'src'),
       plugins: path.resolve(__dirname, 'src/utils/plugins'),
       store: path.resolve(__dirname, 'src/store'),
-      router: path.resolve(__dirname, 'src/router')
+      router: path.resolve(__dirname, 'src/router'),
     },
-    extensions: ['.js', '.vue']
-  }
-}
+    extensions: ['.js', '.vue'],
+  },
+};

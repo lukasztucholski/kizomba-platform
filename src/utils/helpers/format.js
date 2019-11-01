@@ -1,5 +1,5 @@
 export default class format {
-  constructor() { }
+  constructor() {}
 
   static dateFromUnix(timestamp) {
     const options = {

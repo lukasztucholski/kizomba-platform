@@ -7,5 +7,7 @@
 <script>
 export default {
   name: 'AppHeader',
-}
+};
 </script>
+
+<style lang="sass"></style>
