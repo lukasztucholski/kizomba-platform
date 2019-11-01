@@ -1,0 +1,10 @@
+{
+  "name": "kizomba-platform-vue",
+  "version": "0.1.0",
+  "description": "Kizomba Info Platform in Vue.js",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Łukasz Tucholski",
+  "license": "MIT"
+}
