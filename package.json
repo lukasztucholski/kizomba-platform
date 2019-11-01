@@ -2,9 +2,40 @@
   "name": "kizomba-platform-vue",
   "version": "0.1.0",
   "description": "Kizomba Info Platform in Vue.js",
-  "main": "index.js",
-  "scripts": {
-  },
   "author": "Łukasz Tucholski",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "core-js": "^3.3.4",
+    "regenerator-runtime": "^0.13.3",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuetify": "^2.1.6",
+    "vuex": "^3.1.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "deepmerge": "^4.2.1",
+    "fibers": "^4.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "sass": "^1.23.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.3.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
