@@ -34,7 +34,7 @@ module.exports = {
         loader: 'vue-loader',
       },
       {
-        test: /\.s(c|a)ss$/,
+        test: /\.sass$/,
         use: [
           'vue-style-loader',
           'css-loader',
@@ -44,7 +44,24 @@ module.exports = {
               implementation: require('sass'),
               sassOptions: {
                 fiber: require('fibers'),
-                indentedSyntax: true, // optional
+                indentedSyntax: true, // for sAss - true
+              },
+            },
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+              sassOptions: {
+                fiber: require('fibers'),
+                indentedSyntax: false, // for sCss - false
               },
             },
           },
