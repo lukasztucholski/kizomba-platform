@@ -1,6 +1,9 @@
 import axios from 'axios';
 
 class BaseApi {
+  baseUrl: string;
+  baseParams: Object;
+
   constructor({ baseUrl, baseParams }) {
     this.baseUrl = baseUrl;
     this.baseParams = baseParams;

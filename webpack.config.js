@@ -5,7 +5,7 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'script.js',
@@ -32,6 +32,15 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
+      },
+
+      {
+        test: /\.ts?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        },
       },
       {
         test: /\.sass$/,
@@ -93,10 +102,7 @@ module.exports = {
       vue: 'vue/dist/vue.esm.js',
       '@': path.resolve(__dirname),
       '~': path.resolve(__dirname, 'src'),
-      plugins: path.resolve(__dirname, 'src/utils/plugins'),
-      store: path.resolve(__dirname, 'src/store'),
-      router: path.resolve(__dirname, 'src/router'),
     },
-    extensions: ['.js', '.vue'],
+    extensions: ['.ts', '.js', '.vue'],
   },
 };

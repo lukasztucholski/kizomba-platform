@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import AppHeader from '~/components/AppHeader';
 
 export default {
