@@ -1,12 +1,12 @@
 <template>
   <div>
-    <AppHeader />
+    <h1>Home Page</h1>
     <v-alert type="error">Under Construction</v-alert>
     <v-alert type="info">
       <a href="http://lukasztucholski.pl">
         Visit ->
         <v-btn light class="ml-3">
-          <v-icon color="red" class="mr-2">mdi-mouse</v-icon>LukaszTucholski.pl
+          <v-icon color="red" class="mr-2">mdi-mouse </v-icon>LukaszTucholski.pl
         </v-btn>
       </a>
     </v-alert>
@@ -14,12 +14,10 @@
 </template>
 
 <script lang="ts">
-import AppHeader from '~/components/AppHeader';
+import AppHeader from '~/components/app/AppHeader';
 
 export default {
   name: 'Home',
-
-  components: { AppHeader },
 };
 </script>
 
